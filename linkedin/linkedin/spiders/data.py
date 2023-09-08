@@ -5,7 +5,7 @@ class DataSpider(scrapy.Spider):
     name = "data"
     allowed_domains = ["www.linkedin.com"]
     start_urls = [
-        "https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Data%20Analyst&location=United%20States&geoId=&trk=public_jobs_jobs-search-bar_search-submit&position=1&pageNum=0&start=100"]
+        "https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Data%20Analyst&location=United%20States&geoId=&trk=public_jobs_jobs-search-bar_search-submit&position=1&pageNum=0&start=0"]
 
     def parse(self, response):
         yield {
